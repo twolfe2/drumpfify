@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Drumpfify",
+  "description": "Replaces Trump with Drumpf",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Drumpfify",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": [],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+
+}
